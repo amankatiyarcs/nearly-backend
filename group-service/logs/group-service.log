@@ -1,0 +1,5 @@
+2026-01-14T00:03:53.320+05:30  INFO 5805 --- [group-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:08:53.538+05:30  INFO 5805 --- [group-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:13:53.529+05:30  INFO 5805 --- [group-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:18:53.550+05:30  INFO 5805 --- [group-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:23:53.580+05:30  INFO 5805 --- [group-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

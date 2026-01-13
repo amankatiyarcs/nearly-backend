@@ -1,0 +1,10 @@
+com/nearly/group/repository/GroupMemberRepository.class
+com/nearly/group/model/Group$GroupBuilder.class
+com/nearly/group/service/GroupService.class
+com/nearly/group/GroupServiceApplication.class
+com/nearly/group/controller/GroupController.class
+com/nearly/group/model/GroupMember$GroupMemberBuilder.class
+com/nearly/group/repository/GroupRepository.class
+com/nearly/group/model/Group.class
+com/nearly/group/model/GroupMember.class
+com/nearly/group/config/SwaggerConfig.class

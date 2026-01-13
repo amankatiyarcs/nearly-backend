@@ -1,0 +1,17 @@
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/repository/MessageRequestRepository.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/config/WebSocketConfig.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/model/MessageRequest.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/repository/ConversationRepository.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/controller/ConversationController.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/model/Message.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/model/MessageSeen.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/model/Conversation.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/MessagingServiceApplication.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/service/MessageService.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/repository/MessageRepository.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/model/PollVote.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/controller/MessageController.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/repository/MessageSeenRepository.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/repository/PollVoteRepository.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/repository/MessageReactionRepository.java
+/Users/aman/Downloads/Nearly/microservices/messaging-service/src/main/java/com/nearly/messaging/model/MessageReaction.java

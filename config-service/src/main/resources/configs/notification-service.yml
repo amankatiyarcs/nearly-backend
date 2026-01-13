@@ -1,0 +1,34 @@
+server:
+  port: 9012
+
+spring:
+  application:
+    name: notification-service
+  data:
+    mongodb:
+      host: 68.183.244.52
+      port: 27017
+      database: nearly_events
+      username: event_manager
+      password: ChooseASecurePassword123!
+      authentication-database: nearly_events
+    redis:
+      host: localhost
+      port: 6379
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notification-service
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+logging:
+  file:
+    name: logs/notification-service.log
+

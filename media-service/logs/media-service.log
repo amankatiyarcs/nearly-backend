@@ -1,0 +1,6 @@
+2026-01-14T00:00:29.346+05:30  INFO 90961 --- [media-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2026-01-14T00:04:14.240+05:30  INFO 90961 --- [media-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:09:14.243+05:30  INFO 90961 --- [media-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:14:14.239+05:30  INFO 90961 --- [media-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:19:14.255+05:30  INFO 90961 --- [media-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:24:14.265+05:30  INFO 90961 --- [media-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -1,0 +1,10 @@
+com/nearly/messaging/model/Message.class
+com/nearly/messaging/repository/ConversationRepository.class
+com/nearly/messaging/config/WebSocketConfig.class
+com/nearly/messaging/MessagingServiceApplication.class
+com/nearly/messaging/model/Message$MessageBuilder.class
+com/nearly/messaging/model/Conversation$ConversationBuilder.class
+com/nearly/messaging/model/Conversation.class
+com/nearly/messaging/controller/MessageController.class
+com/nearly/messaging/service/MessageService.class
+com/nearly/messaging/repository/MessageRepository.class

@@ -1,0 +1,17 @@
+com/nearly/media/dto/PresignedUrlResponse$PresignedUrlResponseBuilder.class
+com/nearly/media/model/MediaFile$MediaFileBuilder.class
+com/nearly/media/config/S3Config.class
+com/nearly/media/dto/PresignedUrlRequest.class
+com/nearly/media/MediaServiceApplication.class
+com/nearly/media/service/MediaService.class
+com/nearly/media/controller/MediaController.class
+com/nearly/media/dto/PresignedUrlRequest$PresignedUrlRequestBuilder.class
+com/nearly/media/model/MediaFile.class
+com/nearly/media/dto/UploadResponse.class
+com/nearly/media/dto/UploadRequest.class
+com/nearly/media/repository/MediaFileRepository.class
+com/nearly/media/dto/UploadRequest$UploadRequestBuilder.class
+com/nearly/media/model/MediaFile$MediaContext.class
+com/nearly/media/model/MediaFile$MediaType.class
+com/nearly/media/dto/PresignedUrlResponse.class
+com/nearly/media/dto/UploadResponse$UploadResponseBuilder.class

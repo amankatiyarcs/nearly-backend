@@ -1,0 +1,90 @@
+server:
+  port: 9003
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: auth-service
+  config:
+    import: optional:configserver:http://localhost:9001
+  data:
+    mongodb:
+      host: 68.183.244.52
+      port: 27017
+      database: nearly_auth
+      username: seller_app
+      password: StrongPassword123!
+      authentication-database: admin
+    redis:
+      host: localhost
+      port: 6379
+  mail:
+    host: smtp.sendgrid.net
+    port: 2525
+    username: apikey
+    password: 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
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            trust: smtp.sendgrid.net
+
+jwt:
+  secret: nearly-jwt-secret-key-2024-must-be-at-least-256-bits-long-for-security
+  access-token-expiration: 86400000   # 24 hours
+  refresh-token-expiration: 604800000 # 7 days
+
+otp:
+  expiration: 600000  # 10 minutes
+  length: 6
+
+email:
+  from:
+    name: Vyora-Software
+    address: no-reply@kamaify.com
+
+security:
+  anonymous:
+    session-duration: 3600000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+
+# Spring Boot Admin
+spring.boot.admin.client:
+  url: http://localhost:9090
+  instance:
+    prefer-ip: true
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+# Swagger
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+logging:
+  file:
+    name: logs/auth-service.log

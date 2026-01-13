@@ -1,0 +1,65 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+jwt:
+  secret: nearly-jwt-secret-key-2024-must-be-at-least-256-bits-long
+  expiration: 86400000 # 24 hours
+  refresh-expiration: 604800000 # 7 days
+  
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+        waitDurationInOpenState: 10s
+        failureRateThreshold: 50
+        slowCallRateThreshold: 100
+        slowCallDurationThreshold: 2s
+    instances:
+      auth-cb:
+        baseConfig: default
+      user-cb:
+        baseConfig: default
+      activity-cb:
+        baseConfig: default
+      event-cb:
+        baseConfig: default
+      group-cb:
+        baseConfig: default
+      news-cb:
+        baseConfig: default
+      messaging-cb:
+        baseConfig: default
+      moments-cb:
+        baseConfig: default
+      marketplace-cb:
+        baseConfig: default
+      notification-cb:
+        baseConfig: default
+      search-cb:
+        baseConfig: default
+      chat-cb:
+        baseConfig: default
+      video-cb:
+        baseConfig: default
+      report-cb:
+        baseConfig: default
+
+logging:
+  file:
+    name: logs/api-gateway.log

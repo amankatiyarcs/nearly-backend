@@ -1,0 +1,69 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: admin-service
+  config:
+    import: optional:configserver:http://localhost:9001
+  security:
+    user:
+      name: admin
+      password: admin123
+  boot:
+    admin:
+      ui:
+        title: "Nearly Admin Dashboard"
+        brand: "<img src='assets/img/icon-spring-boot-admin.svg'><span>Nearly Admin</span>"
+        favicon: "assets/img/favicon.png"
+        remember-me-enabled: true
+        available-languages:
+          - en
+      monitor:
+        status-interval: 10000ms
+        status-lifetime: 10000ms
+      notify:
+        mail:
+          enabled: false
+  mail:
+    host: smtp.sendgrid.net
+    port: 2525
+    username: apikey
+    password: ${SENDGRID_API_KEY:disabled}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+logging:
+  file:
+    name: logs/admin-service.log
+  level:
+    de.codecentric.boot.admin: DEBUG
+

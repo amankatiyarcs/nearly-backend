@@ -1,0 +1,30 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: auth-service
+  data:
+    mongodb:
+      host: 68.183.244.52
+      port: 27017
+      database: nearly_events
+      username: event_manager
+      password: ChooseASecurePassword123!
+      authentication-database: nearly_events
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  secret: nearly-jwt-secret-key-2024-must-be-at-least-256-bits-long
+  expiration: 86400000 # 24 hours
+  refresh-expiration: 604800000 # 7 days
+
+anonymous:
+  session:
+    ttl: 3600 # 1 hour in seconds
+
+logging:
+  file:
+    name: logs/auth-service.log

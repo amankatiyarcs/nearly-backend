@@ -1,0 +1,12 @@
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/config/CorsConfig.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/config/AuthConfig.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/controller/FallbackController.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/filter/AuthenticationFilter.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/config/CircuitBreakerConfig.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/filter/RequestLoggingFilter.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/filter/AnonymousSessionFilter.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/config/RedisConfig.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/config/GatewayConfig.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/ApiGatewayApplication.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/util/JwtUtil.java
+/Users/aman/Downloads/Nearly/microservices/api-gateway/src/main/java/com/nearly/gateway/filter/RemoveDownstreamCorsFilter.java

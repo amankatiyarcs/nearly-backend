@@ -1,0 +1,14 @@
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/MarketplaceServiceApplication.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/repository/PageRepository.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/repository/PlaceRepository.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/controller/PlaceController.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/model/Page.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/model/Place.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/controller/PageController.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/model/Deal.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/repository/DealRepository.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/controller/JobController.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/service/MarketplaceService.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/controller/DealController.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/model/Job.java
+/Users/aman/Downloads/Nearly/microservices/marketplace-service/src/main/java/com/nearly/marketplace/repository/JobRepository.java

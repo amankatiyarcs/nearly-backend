@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="video-chat-service" />
+        <module name="messaging-service" />
+        <module name="moments-service" />
+        <module name="config-service" />
+        <module name="random-chat-service" />
+        <module name="user-service" />
+        <module name="pai-service" />
+        <module name="discovery-service" />
+        <module name="notification-service" />
+        <module name="group-service" />
+        <module name="auth-service" />
+        <module name="news-service" />
+        <module name="activity-service" />
+        <module name="event-service" />
+        <module name="search-service" />
+        <module name="media-service" />
+        <module name="api-gateway" />
+        <module name="marketplace-service" />
+        <module name="report-service" />
+        <module name="admin-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activity-service" options="-parameters" />
+      <module name="admin-service" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+      <module name="config-service" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
+      <module name="event-service" options="-parameters" />
+      <module name="group-service" options="-parameters" />
+      <module name="marketplace-service" options="-parameters" />
+      <module name="media-service" options="-parameters" />
+      <module name="messaging-service" options="-parameters" />
+      <module name="moments-service" options="-parameters" />
+      <module name="nearly-microservices" options="-parameters" />
+      <module name="news-service" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="pai-service" options="-parameters" />
+      <module name="random-chat-service" options="-parameters" />
+      <module name="report-service" options="-parameters" />
+      <module name="search-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="video-chat-service" options="-parameters" />
+    </option>
+  </component>
+</project>

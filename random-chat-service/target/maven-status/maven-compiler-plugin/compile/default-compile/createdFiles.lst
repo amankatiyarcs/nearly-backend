@@ -1,0 +1,10 @@
+com/nearly/chat/dto/ChatMessage$ChatMessageBuilder.class
+com/nearly/chat/dto/ChatMessage$MessageType.class
+com/nearly/chat/RandomChatServiceApplication.class
+com/nearly/chat/service/MatchingService.class
+com/nearly/chat/handler/ChatWebSocketHandler$1.class
+com/nearly/chat/service/MatchingService$MatchResult.class
+com/nearly/chat/handler/ChatWebSocketHandler.class
+com/nearly/chat/config/WebSocketConfig.class
+com/nearly/chat/dto/ChatMessage.class
+com/nearly/chat/controller/ChatController.class

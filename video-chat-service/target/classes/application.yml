@@ -1,0 +1,43 @@
+server:
+  port: 9016
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: video-chat-service
+  config:
+    import: optional:configserver:http://localhost:9001
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/nearly_video
+      auto-index-creation: true
+    redis:
+      host: localhost
+      port: 6379
+
+video-chat:
+  matching:
+    timeout-seconds: 45
+  session:
+    max-duration-minutes: 60
+  queue:
+    key: video-chat:waiting-queue
+
+webrtc:
+  stun-servers:
+    - url: stun:stun.l.google.com:19302
+    - url: stun:stun1.l.google.com:19302
+    - url: stun:stun2.l.google.com:19302
+  turn-servers: []
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  file:
+    name: logs/video-chat-service.log

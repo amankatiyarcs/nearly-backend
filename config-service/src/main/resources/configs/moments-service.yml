@@ -1,0 +1,30 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: moments-service
+  data:
+    mongodb:
+      host: 68.183.244.52
+      port: 27017
+      database: nearly_events
+      username: event_manager
+      password: ChooseASecurePassword123!
+      authentication-database: nearly_events
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+# Moments expire after 24 hours (global) or 14 days (private)
+moments:
+  expiration:
+    global-hours: 24
+    private-days: 14
+
+logging:
+  file:
+    name: logs/moments-service.log
+

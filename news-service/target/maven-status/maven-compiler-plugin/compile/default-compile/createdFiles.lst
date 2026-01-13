@@ -1,0 +1,6 @@
+com/nearly/news/model/News.class
+com/nearly/news/controller/NewsController.class
+com/nearly/news/service/NewsService.class
+com/nearly/news/repository/NewsRepository.class
+com/nearly/news/model/News$NewsBuilder.class
+com/nearly/news/NewsServiceApplication.class

@@ -1,0 +1,32 @@
+server:
+  port: 9011
+
+spring:
+  application:
+    name: marketplace-service
+  data:
+    mongodb:
+      host: 68.183.244.52
+      port: 27017
+      database: nearly_events
+      username: event_manager
+      password: ChooseASecurePassword123!
+      authentication-database: nearly_events
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+# Job listings expire after 30 days by default
+jobs:
+  default-expiry-days: 30
+
+# Deals expire based on validUntil date
+deals:
+  featured-limit: 10
+
+logging:
+  file:
+    name: logs/marketplace-service.log
+

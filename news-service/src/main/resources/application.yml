@@ -1,0 +1,32 @@
+server:
+  port: 9008
+
+spring:
+  application:
+    name: news-service
+  config:
+    import: optional:configserver:http://localhost:9001
+  data:
+    mongodb:
+      host: 68.183.244.52
+      port: 27017
+      database: nearly_news
+      username: seller_app
+      password: StrongPassword123!
+      authentication-database: admin
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  file:
+    name: logs/news-service.log

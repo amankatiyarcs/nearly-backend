@@ -1,0 +1,8 @@
+com/nearly/search/model/SearchDocument$SearchDocumentBuilder.class
+com/nearly/search/service/SearchService.class
+com/nearly/search/config/RedisConfig.class
+com/nearly/search/consumer/SearchIndexConsumer.class
+com/nearly/search/controller/SearchController.class
+com/nearly/search/repository/SearchRepository.class
+com/nearly/search/model/SearchDocument.class
+com/nearly/search/SearchServiceApplication.class

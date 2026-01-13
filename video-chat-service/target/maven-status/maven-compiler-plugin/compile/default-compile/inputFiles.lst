@@ -1,0 +1,10 @@
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/handler/VideoWebSocketHandler.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/model/VideoOnlineUser.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/config/WebSocketConfig.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/dto/SignalingMessage.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/service/VideoMatchingService.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/dto/IceServerConfig.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/repository/VideoOnlineUserRepository.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/VideoChatServiceApplication.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/config/RedisConfig.java
+/Users/aman/Downloads/Nearly/microservices/video-chat-service/src/main/java/com/nearly/video/controller/VideoController.java

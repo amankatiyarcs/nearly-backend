@@ -1,0 +1,87 @@
+server:
+  port: 9014
+
+spring:
+  application:
+    name: media-service
+  config:
+    import: optional:configserver:http://localhost:9001
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  data:
+    mongodb:
+      host: 68.183.244.52
+      port: 27017
+      database: nearly_media
+      username: seller_app
+      password: StrongPassword123!
+      authentication-database: admin
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          prefer-ip: true
+
+aws:
+  s3:
+    access-key: b22ffe2e5ad5c8f213e2fe9f3db6ca8d
+    secret-key: 756c8229756d59c84ef62843483af064104c2cfda2724115e00e0188c90c23d4
+    region: ap-south-1
+    bucket-name: vyora-bucket
+    endpoint: https://abizuwqnqkbicrhorcig.storage.supabase.co/storage/v1/s3
+
+media:
+  max-file-size-mb: 100
+  allowed-image-types:
+    - image/jpeg
+    - image/png
+    - image/gif
+    - image/webp
+  allowed-video-types:
+    - video/mp4
+    - video/webm
+    - video/quicktime
+  allowed-audio-types:
+    - audio/mpeg
+    - audio/wav
+    - audio/ogg
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+
+# Actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+# Swagger/OpenAPI
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+logging:
+  file:
+    name: logs/media-service.log

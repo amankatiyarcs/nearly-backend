@@ -1,0 +1,23 @@
+server:
+  port: 9015
+
+spring:
+  application:
+    name: random-chat-service
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+# Random chat configuration
+random-chat:
+  matching:
+    timeout-seconds: 30
+  session:
+    max-duration-minutes: 60
+  queue:
+    key: random-chat:waiting-queue
+
+logging:
+  file:
+    name: logs/random-chat-service.log

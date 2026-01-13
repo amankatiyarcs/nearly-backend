@@ -1,0 +1,8 @@
+com/nearly/notification/model/Notification.class
+com/nearly/notification/NotificationServiceApplication.class
+com/nearly/notification/config/WebSocketConfig.class
+com/nearly/notification/consumer/NotificationConsumer.class
+com/nearly/notification/service/NotificationService.class
+com/nearly/notification/controller/NotificationController.class
+com/nearly/notification/model/Notification$NotificationBuilder.class
+com/nearly/notification/repository/NotificationRepository.class

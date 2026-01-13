@@ -1,0 +1,10 @@
+2026-01-14T00:00:25.378+05:30  INFO 29944 --- [auth-service] [http-nio-9003-exec-6] c.nearly.auth.controller.AuthController  : Login attempt for: vendor1@gmail.com
+2026-01-14T00:00:26.017+05:30  INFO 29944 --- [auth-service] [http-nio-9003-exec-6] com.nearly.auth.service.AuthService      : Login successful for user: admin497
+2026-01-14T00:00:43.257+05:30  INFO 29944 --- [auth-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:05:43.270+05:30  INFO 29944 --- [auth-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:10:00.892+05:30  INFO 29944 --- [auth-service] [http-nio-9003-exec-5] c.nearly.auth.controller.AuthController  : Login attempt for: vendor1@gmail.com
+2026-01-14T00:10:01.236+05:30  INFO 29944 --- [auth-service] [http-nio-9003-exec-5] com.nearly.auth.service.AuthService      : Login successful for user: admin497
+2026-01-14T00:10:43.270+05:30  INFO 29944 --- [auth-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:15:43.281+05:30  INFO 29944 --- [auth-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:20:43.290+05:30  INFO 29944 --- [auth-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:25:43.314+05:30  INFO 29944 --- [auth-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

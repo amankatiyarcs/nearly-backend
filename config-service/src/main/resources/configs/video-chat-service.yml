@@ -1,0 +1,31 @@
+server:
+  port: 9016
+
+spring:
+  application:
+    name: video-chat-service
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+# Video chat configuration
+video-chat:
+  matching:
+    timeout-seconds: 45
+  session:
+    max-duration-minutes: 60
+  queue:
+    key: video-chat:waiting-queue
+
+# ICE Server configuration for WebRTC
+webrtc:
+  stun-servers:
+    - url: stun:stun.l.google.com:19302
+    - url: stun:stun1.l.google.com:19302
+    - url: stun:stun2.l.google.com:19302
+  turn-servers: []
+
+logging:
+  file:
+    name: logs/video-chat-service.log

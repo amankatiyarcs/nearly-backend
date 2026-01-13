@@ -1,0 +1,90 @@
+2026-01-14T00:00:17.807+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:00:47.632+05:30  INFO 36645 --- [random-chat-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:00:47.800+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:00:47.819+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:01:17.808+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:01:47.805+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:01:47.831+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:02:17.806+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:02:47.805+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:02:47.829+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:03:17.811+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:03:47.808+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:03:47.831+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:04:17.808+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:04:47.809+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:04:47.821+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:05:17.808+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:05:47.667+05:30  INFO 36645 --- [random-chat-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:05:47.808+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:05:47.837+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:06:17.804+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:06:47.809+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:06:47.831+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:07:17.807+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:07:47.808+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:07:47.841+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:08:17.807+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:08:47.810+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:08:47.844+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:09:17.792+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:09:47.787+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:09:47.814+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:10:17.778+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:10:47.663+05:30  INFO 36645 --- [random-chat-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:10:47.779+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:10:47.803+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:11:17.786+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:11:47.781+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:11:47.803+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:12:17.778+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:12:47.781+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:12:47.790+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:13:17.781+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:13:47.783+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:13:47.812+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:14:17.819+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:14:47.784+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:14:47.806+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:15:17.777+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:15:47.675+05:30  INFO 36645 --- [random-chat-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:15:47.777+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:15:47.802+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:16:17.785+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:16:47.782+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:16:47.793+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:17:17.779+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:17:47.781+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:17:47.802+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:18:17.791+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:18:47.780+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:18:47.790+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:19:17.789+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:19:47.796+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:19:47.802+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:20:17.789+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:20:47.687+05:30  INFO 36645 --- [random-chat-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:20:47.788+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:20:47.812+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:21:17.781+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:21:47.784+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:21:47.799+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:22:17.783+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:22:47.783+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:22:47.791+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:23:17.784+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:23:47.782+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:23:47.791+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:24:17.782+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:24:47.787+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:24:47.806+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:25:17.793+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:25:47.714+05:30  INFO 36645 --- [random-chat-service] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-14T00:25:47.788+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:25:47.804+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:26:17.793+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:26:47.794+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:26:47.814+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB
+2026-01-14T00:27:17.791+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:27:47.794+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.service.MatchingService    : Cleanup: 0 stale users removed, 0 stale rooms removed. Online: 0, Queue: 0, ActiveRooms: 0
+2026-01-14T00:27:47.812+05:30 DEBUG 36645 --- [random-chat-service] [scheduling-1] c.nearly.chat.controller.ChatController  : Cleaned up stale chat users from MongoDB

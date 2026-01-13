@@ -1,0 +1,14 @@
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/dto/CreateUserRequest.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/repository/UserRepository.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/service/UserService.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/dto/UpdateUserRequest.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/UserServiceApplication.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/dto/UserDto.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/model/Follow.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/config/SwaggerConfig.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/repository/FollowRepository.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/config/SecurityConfig.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/dto/AuthResponse.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/dto/AuthRequest.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/controller/UserController.java
+/Users/aman/Downloads/Nearly/microservices/user-service/src/main/java/com/nearly/user/model/User.java

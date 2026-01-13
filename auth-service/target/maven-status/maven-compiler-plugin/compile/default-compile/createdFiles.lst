@@ -1,0 +1,6 @@
+com/nearly/auth/dto/AnonymousSessionResponse.class
+com/nearly/auth/dto/AnonymousSessionResponse$AnonymousSessionResponseBuilder.class
+com/nearly/auth/dto/AnonymousSessionRequest$AnonymousSessionRequestBuilder.class
+com/nearly/auth/dto/AnonymousSessionRequest.class
+com/nearly/auth/service/AnonymousSessionService.class
+com/nearly/auth/AuthServiceApplication.class

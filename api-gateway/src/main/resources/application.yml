@@ -1,0 +1,68 @@
+server:
+  port: 9002
+
+# JWT Configuration - Must match auth-service
+jwt:
+  secret: nearly-jwt-secret-key-2024-must-be-at-least-256-bits-long-for-security
+
+# Authentication Configuration
+auth:
+  enabled: true
+  public-paths:
+    - /api/auth/login
+    - /api/auth/signup
+    - /api/auth/forgot-password
+    - /api/auth/reset-password
+    - /api/auth/verify-otp
+    - /api/auth/check-username
+    - /api/auth/refresh
+    - /api/auth/health
+    - /api/auth/anonymous/session
+  anonymous-paths:
+    - /api/random-chat
+    - /api/video-chat
+    - /ws/chat
+    - /ws/video
+
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: optional:configserver:http://localhost:9001
+  cloud:
+    gateway:
+      # CORS is handled by CorsConfig.java bean
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      default-filters:
+        # Remove duplicate CORS headers from downstream services
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials Access-Control-Allow-Methods Access-Control-Allow-Headers Access-Control-Expose-Headers Access-Control-Max-Age, RETAIN_FIRST
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+        waitDurationInOpenState: 10s
+        failureRateThreshold: 50
+        slowCallRateThreshold: 100
+        slowCallDurationThreshold: 2s
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  file:
+    name: logs/api-gateway.log

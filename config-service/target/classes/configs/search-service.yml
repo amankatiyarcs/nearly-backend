@@ -1,0 +1,30 @@
+server:
+  port: 9013
+
+spring:
+  application:
+    name: search-service
+  elasticsearch:
+    uris: http://68.183.244.194:9200
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: search-service
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
+# Trending searches TTL
+trending:
+  ttl-hours: 24
+
+logging:
+  file:
+    name: logs/search-service.log
+

@@ -1,0 +1,372 @@
+version: '3.8'
+
+services:
+  # Local Infrastructure (Kafka & Redis only - MongoDB and ES are external)
+  redis:
+    image: redis:7.2-alpine
+    container_name: nearly-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - nearly-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    container_name: nearly-zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - nearly-network
+
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    container_name: nearly-kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+    networks:
+      - nearly-network
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions", "--bootstrap-server", "localhost:9092"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Discovery Service (Eureka)
+  discovery-service:
+    build: ./discovery-service
+    container_name: nearly-discovery
+    ports:
+      - "8761:8761"
+    networks:
+      - nearly-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8761/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Config Service
+  config-service:
+    build: ./config-service
+    container_name: nearly-config
+    ports:
+      - "8888:8888"
+    depends_on:
+      discovery-service:
+        condition: service_healthy
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+    networks:
+      - nearly-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8888/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # API Gateway
+  api-gateway:
+    build: ./api-gateway
+    container_name: nearly-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+    networks:
+      - nearly-network
+
+  # Auth Service
+  auth-service:
+    build: ./auth-service
+    container_name: nearly-auth
+    ports:
+      - "8081:8081"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+    networks:
+      - nearly-network
+
+  # User Service
+  user-service:
+    build: ./user-service
+    container_name: nearly-users
+    ports:
+      - "8085:8085"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Activity Service
+  activity-service:
+    build: ./activity-service
+    container_name: nearly-activities
+    ports:
+      - "8086:8086"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Event Service
+  event-service:
+    build: ./event-service
+    container_name: nearly-events
+    ports:
+      - "8087:8087"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Group Service
+  group-service:
+    build: ./group-service
+    container_name: nearly-groups
+    ports:
+      - "8088:8088"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # News Service
+  news-service:
+    build: ./news-service
+    container_name: nearly-news
+    ports:
+      - "8089:8089"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Messaging Service
+  messaging-service:
+    build: ./messaging-service
+    container_name: nearly-messaging
+    ports:
+      - "8090:8090"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Moments Service
+  moments-service:
+    build: ./moments-service
+    container_name: nearly-moments
+    ports:
+      - "8091:8091"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Marketplace Service
+  marketplace-service:
+    build: ./marketplace-service
+    container_name: nearly-marketplace
+    ports:
+      - "8092:8092"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Notification Service
+  notification-service:
+    build: ./notification-service
+    container_name: nearly-notifications
+    ports:
+      - "8093:8093"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Search Service
+  search-service:
+    build: ./search-service
+    container_name: nearly-search
+    ports:
+      - "8094:8094"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Random Chat Service
+  random-chat-service:
+    build: ./random-chat-service
+    container_name: nearly-random-chat
+    ports:
+      - "8082:8082"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+    networks:
+      - nearly-network
+
+  # Video Chat Service
+  video-chat-service:
+    build: ./video-chat-service
+    container_name: nearly-video-chat
+    ports:
+      - "8083:8083"
+    depends_on:
+      - discovery-service
+      - config-service
+      - redis
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_DATA_REDIS_HOST: redis
+    networks:
+      - nearly-network
+
+  # Report Service
+  report-service:
+    build: ./report-service
+    container_name: nearly-reports
+    ports:
+      - "8084:8084"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+  # Media Service
+  media-service:
+    build: ./media-service
+    container_name: nearly-media
+    ports:
+      - "8095:8095"
+    depends_on:
+      - discovery-service
+      - config-service
+      - kafka
+    environment:
+      SPRING_CONFIG_IMPORT: configserver:http://config-service:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - nearly-network
+
+volumes:
+  redis_data:
+
+networks:
+  nearly-network:
+    driver: bridge

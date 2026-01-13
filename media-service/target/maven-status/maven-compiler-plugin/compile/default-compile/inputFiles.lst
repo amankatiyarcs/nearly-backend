@@ -1,0 +1,11 @@
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/dto/PresignedUrlResponse.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/controller/MediaController.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/repository/MediaFileRepository.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/dto/PresignedUrlRequest.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/config/S3Config.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/service/MediaService.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/dto/UploadResponse.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/model/MediaFile.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/MediaServiceApplication.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/dto/UploadRequest.java
+/Users/aman/Downloads/Nearly/microservices/media-service/src/main/java/com/nearly/media/config/SwaggerConfig.java
